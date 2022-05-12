@@ -39,7 +39,7 @@ input[type=radio] {
   margin: 0 auto;
 }
 .header {
-  margin: 10rem 0 2rem;
+  margin: 8rem 0 5rem;
   font-size: 4rem;
   color: #fff;
   text-shadow: .1rem .1rem .2rem #000, 0 0 1em #ebe3e3;
@@ -73,7 +73,7 @@ h2 {
 }
 .slider__footer {
   width: 72rem;
-  padding-top: 2rem;
+  padding-top: 2.5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -155,8 +155,27 @@ h2 {
 }
 
 @media (max-width: 767px) {
+  .header {
+    margin: 5rem 0 5rem;
+  }
+  .container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+  .slider__images {
+    width: calc(100% - 2rem);
+    height: auto;
+  }
   .slider__footer {
     flex-direction: column;
+    width: 100%;
+  }
+  .header {
+    font-size: 3.6rem;
+  }
+  h2 {
+    font-size: 2.8rem;
   }
   .slider__titles {
     order: 2;
